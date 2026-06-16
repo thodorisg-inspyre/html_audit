@@ -65,8 +65,8 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .rule-dk{height:1px;background:var(--rule-dk);flex-shrink:0;}
 
 /* ── TYPE SCALE ── */
-.sec-lbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:var(--ash);}
-.sec-lbl-dk{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:#888;}
+.sec-lbl{font-size:9px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:var(--ash);}
+.sec-lbl-dk{font-size:9px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:#888;}
 .t-display{font-family:'Manrope',sans-serif;font-size:104px;font-weight:800;line-height:.86;letter-spacing:-4px;text-transform:uppercase;}
 .t-h1{font-family:'Manrope',sans-serif;font-size:72px;font-weight:800;line-height:.92;letter-spacing:-2px;text-transform:uppercase;}
 .t-h2{font-family:'Manrope',sans-serif;font-size:48px;font-weight:800;line-height:.96;letter-spacing:-1px;text-transform:uppercase;}
@@ -229,7 +229,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <!-- left -->
     <div style="width:390px;flex-shrink:0;display:flex;flex-direction:column;">
       <div class="sec-lbl" style="margin-bottom:16px;">02 / Συνολική Αξιολόγηση</div>
-      <div class="t-h1" style="color:var(--ink);margin-bottom:20px;font-size:60px;">Θέλει<br>δουλειά.</div>
+      <div class="t-h1" style="color:var(--ink);margin-bottom:20px;font-size:84px;letter-spacing:-3px;line-height:.86;">Θέλει<br>δουλειά.</div>
       <div class="t-body" style="max-width:320px;">14 ευρήματα σε κρίσιμες κατηγορίες. Performance, SEO, Social και Technical υστερούν σοβαρά έναντι όλων των ανταγωνιστών.</div>
       <div class="chart-wrap" style="flex:1;min-height:160px;margin-top:28px;">
         <canvas id="chartRadar"></canvas>
@@ -378,7 +378,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;flex-shrink:0;">
         <div>
-          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--red);line-height:1;">✗</span><span style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Τώρα — Invalid JSON</span></div>
+          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--red);line-height:1;">✗</span><span style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Τώρα — Invalid JSON</span></div>
           <div class="code-blk code-blk-bad">
 <span class="c-bad">&lt;script type="application/ld+json"&gt;</span>
 <span class="c-bad">{</span>
@@ -388,7 +388,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 <span class="c-cm">→ JSON.parse() → SyntaxError (ignored)</span></div>
         </div>
         <div>
-          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--green);line-height:1;">✓</span><span style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Fix — Valid JSON-LD</span></div>
+          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--green);line-height:1;">✓</span><span style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Fix — Valid JSON-LD</span></div>
           <div class="code-blk code-blk-ok">
 <span class="c-cm">// Nuxt head() config:</span>
 <span class="c-ok">__dangerouslyDisableSanitizers: ['script']</span>
@@ -418,10 +418,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <div class="sec-lbl" style="margin-bottom:16px;">06 / On-Page SEO</div>
       <table style="width:100%;border-collapse:collapse;flex-shrink:0;">
         <thead><tr>
-          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Σελίδα</th>
-          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Page Title</th>
-          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">H1</th>
-          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:right;border-bottom:1px solid var(--rule);">Alt Missing</th>
+          <th style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Σελίδα</th>
+          <th style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Page Title</th>
+          <th style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">H1</th>
+          <th style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:right;border-bottom:1px solid var(--rule);">Alt Missing</th>
         </tr></thead>
         <tbody>
           <tr><td style="font-size:12px;font-weight:700;color:var(--ink);padding:11px 0;border-bottom:1px solid var(--rule);">Homepage /</td><td style="font-size:12px;color:var(--green);font-weight:700;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);">OK</td><td style="font-size:12px;color:var(--red);font-weight:700;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);">6 H1s (carousel)</td><td style="font-size:12px;color:var(--red);font-weight:700;padding:11px 0;border-bottom:1px solid var(--rule);text-align:right;">53%</td></tr>
@@ -739,7 +739,7 @@ new Chart(document.getElementById('chartOG'),{
 const ltBar=(id,vals,unit)=>new Chart(document.getElementById(id),{
   type:'bar',
   data:{labels:['Suzuki','Toyota','Kia','Nissan'],datasets:[{data:vals,backgroundColor:[R,T,K,N],borderRadius:4}]},
-  options:{animation:false,responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+(unit||'')}}},scales:{y:{grid:{display:false},ticks:{font:{size:11,weight:'700'},color:'#555'}},x:{grid:{color:'rgba(0,0,0,0.06)'},ticks:{color:'#AAA',font:{size:9}}}}}
+  options:{animation:false,responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.raw+(unit||'')}}},scales:{y:{grid:{display:false},ticks:{font:{size:11,weight:'400'},color:'#555'}},x:{grid:{color:'rgba(0,0,0,0.06)'},ticks:{color:'#AAA',font:{size:9}}}}}
 });
 ltBar('bTTFB',[1.15,0.14,0.16,0.10],'s');
 ltBar('bWeight',[757,41,23,141],' KB');
