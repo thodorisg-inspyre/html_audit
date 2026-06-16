@@ -104,10 +104,14 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .ss-url{font-size:9px;color:rgba(255,255,255,.5);margin-top:2px;}
 
 /* ── CALLOUT ── */
-.callout{padding:18px 22px;border:1px solid var(--rule);border-left:3px solid var(--ink);border-radius:0 10px 10px 0;}
-.callout-red{border-left-color:var(--red);background:#FDFAFA;}
-.callout-green{border-left-color:var(--green);background:#FAFDF9;}
-.callout-lbl{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;margin-bottom:5px;}
+.callout{padding:16px 20px;background:#FFFFFF;border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:0 8px 8px 0;}
+.callout-red{border-left-color:var(--red);}
+.callout-amber{border-left-color:var(--amber);}
+.callout-green{border-left-color:var(--green);}
+.callout-red .callout-lbl{color:var(--red);}
+.callout-amber .callout-lbl{color:var(--amber);}
+.callout-green .callout-lbl{color:var(--green);}
+.callout-lbl{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:4px;margin-bottom:8px;}
 
 /* ── ACTION ── */
 .action-row{display:grid;grid-template-columns:28px 80px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:start;}
@@ -118,7 +122,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .atag-q{background:#FEF3E2;color:var(--amber);}
 .atag-o{background:#E8F5EE;color:var(--green);}
 .action-title{font-size:12px;font-weight:800;color:var(--ink);margin-bottom:3px;}
-.action-desc{font-size:11px;color:var(--ash);line-height:1.6;}
+.action-desc{font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;}
 
 /* ── OG ── */
 .og-preview{border:1px solid var(--rule);overflow:hidden;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
@@ -305,8 +309,8 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       </div>
       <div style="margin-top:20px;flex:1;display:flex;flex-direction:column;justify-content:flex-end;">
         <div class="callout callout-red">
-          <div class="callout-lbl" style="color:var(--red);">Κρίσιμο</div>
-          <div style="font-size:12px;color:var(--ash);line-height:1.6;">Sitemap HTTP <strong style="color:var(--red);">504</strong> — 60s timeout. Robots.txt εξακολουθεί να παραπέμπει σε αυτό τη Google. Νέα μοντέλα &amp; προσφορές δεν ανακαλύπτονται.</div>
+          <div class="callout-lbl">Κρίσιμο</div>
+          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Sitemap HTTP <strong style="color:var(--red);">504</strong> — 60s timeout. Robots.txt εξακολουθεί να παραπέμπει σε αυτό τη Google. Νέα μοντέλα &amp; προσφορές δεν ανακαλύπτονται.</div>
         </div>
       </div>
     </div>
@@ -417,9 +421,9 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       </div>
 
     <div style="margin-top:24px;"><div class="sec-lbl" style="margin-bottom:16px;">Κύρια ευρήματα</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;">
-      <div class="callout callout-red"><div class="callout-lbl" style="color:var(--red);">Πολλαπλά H1s</div><div style="font-size:13px;font-weight:700;color:var(--ink);margin:4px 0;">6 H1s από το carousel</div><div style="font-size:11px;color:var(--ash);line-height:1.6;">Κάθε slide αποδίδει δικό του H1. Fix: ένα keyword H1, slides → H2.</div></div>
-      <div class="callout" style="border-left-color:var(--amber);background:#FEFDF9;"><div class="callout-lbl" style="color:var(--amber);">Διπλό Title Suffix</div><div style="font-size:13px;font-weight:700;color:var(--ink);margin:4px 0;">«| Suzuki.gr | Suzuki.gr»</div><div style="font-size:11px;color:var(--ash);line-height:1.6;">Titles >60 χαρακτήρες — κόβονται στα SERPs. Fix: κεντρικό template.</div></div>
-      <div class="callout callout-red"><div class="callout-lbl" style="color:var(--red);">Alt Text Gap</div><div style="font-size:13px;font-weight:700;color:var(--ink);margin:4px 0;">Έως 72% αμαρκάριστες</div><div style="font-size:11px;color:var(--ash);line-height:1.6;">Χάνεται Google Images traffic. Fix: υποχρεωτικό alt στο CMS.</div></div>
+      <div class="callout callout-red"><div class="callout-lbl">Πολλαπλά H1s</div><div style="font-size:13px;font-weight:800;color:var(--ink);margin:4px 0 6px;">6 H1s από το carousel</div><div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Κάθε slide αποδίδει δικό του H1. Fix: ένα keyword H1, slides → H2.</div></div>
+      <div class="callout callout-amber"><div class="callout-lbl">Διπλό Title Suffix</div><div style="font-size:13px;font-weight:800;color:var(--ink);margin:4px 0 6px;">«| Suzuki.gr | Suzuki.gr»</div><div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Titles >60 χαρακτήρες — κόβονται στα SERPs. Fix: κεντρικό template.</div></div>
+      <div class="callout callout-red"><div class="callout-lbl">Alt Text Gap</div><div style="font-size:13px;font-weight:800;color:var(--ink);margin:4px 0 6px;">Έως 72% αμαρκάριστες</div><div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Χάνεται Google Images traffic. Fix: υποχρεωτικό alt στο CMS.</div></div>
     </div></div>
   </div><div class="pf-row"><div class="pf-lbl" style="display:flex;align-items:center;gap:8px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="168 96 382 88" style="width:42px;height:auto;display:inline-block;vertical-align:middle;" fill="currentColor"><path d="M171.211 103.836H192.227V157H171.211V103.836ZM227.758 103.836H231.273C240.857 103.836 246.573 107.078 248.422 113.562C249.047 115.698 249.359 118.146 249.359 120.906V157H227.758V103.836ZM199.398 103.836H220.414V157H199.398V103.836ZM281.141 103.836H305.242V130.594L281.141 103.836ZM255.633 119.539H255.398C255.398 114.174 256.857 110.216 259.773 107.664C262.69 105.112 267.182 103.836 273.25 103.836L305.242 142.664C305.242 147.82 303.849 151.505 301.062 153.719C298.354 155.88 293.927 156.961 287.781 156.961L255.633 119.539ZM255.516 130.086L278.719 157H255.516V130.086ZM337.492 103.836H340.383C348.117 103.836 353.898 105.698 357.727 109.422C361.242 112.833 363 117.664 363 123.914C363 129.461 361.177 133.927 357.531 137.312C353.651 140.906 348.299 142.703 341.477 142.703H337.492V103.836ZM309.445 103.836H330.461V156.922H309.445V103.836ZM417.047 158.445C417.047 170.763 410.862 176.922 398.492 176.922H396.07V103.836H417.047V158.445ZM367.281 103.836H388.883V157H385.367C375.784 157 370.068 153.745 368.219 147.234C367.594 145.125 367.281 142.69 367.281 139.93V103.836ZM472.539 120.359C472.539 128.224 469.102 133.393 462.227 135.867C466.081 137.299 468.984 139.63 470.938 142.859C472.63 145.724 473.477 149.057 473.477 152.859V157H450.195V103.758H452.227C459.102 103.758 464.167 105.06 467.422 107.664C470.833 110.398 472.539 114.63 472.539 120.359ZM422.695 103.836H443.711V157H422.695V103.836Z"/><path d="M512.877 103.211H516.357C529.646 103.211 537.75 107.711 540.668 116.711C541.617 119.699 542.092 123.162 542.092 127.1V132.9H512.877V103.211ZM474.803 130.738C474.803 126.871 475.312 123.285 476.332 119.98C477.352 116.641 478.934 113.723 481.078 111.227C485.719 105.883 492.363 103.211 501.012 103.211H505.072V157H502.33C493.471 157 486.615 154.574 481.764 149.723C477.123 145.082 474.803 138.754 474.803 130.738ZM512.877 143.236H539.244V144.713C539.244 147.982 538.066 150.742 535.711 152.992C532.828 155.664 528.732 157 523.424 157H512.877V143.236Z"/></svg><span>WEBSITE AUDIT — SUZUKI.GR</span></div><div class="pf-num">06</div></div></div>
 </div>
@@ -460,7 +464,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
         <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--off);border:1px solid var(--rule);border-radius:8px;"><span style="font-size:11px;color:var(--ink);font-weight:600;">twitter:card</span><span style="font-size:11px;color:var(--red);font-weight:700;">✗ Missing</span></div>
         <div style="padding:12px;border:1px solid var(--rule);background:#F0FDF4;border-radius:8px;margin-top:4px;">
           <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:4px;">Fix</div>
-          <div style="font-size:11px;color:var(--ash);line-height:1.6;">Λίγες γραμμές στο Nuxt head() config ελέγχουν κάθε social share του brand — Facebook, Instagram, X, WhatsApp.</div>
+          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Λίγες γραμμές στο Nuxt head() config ελέγχουν κάθε social share του brand — Facebook, Instagram, X, WhatsApp.</div>
         </div>
       </div>
     </div>
@@ -488,7 +492,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">2/2</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">JSON-LD</div></div>
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
-          <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Homepage 18× ελαφρύτερη. 2 valid JSON-LD + 6 OG tags. Benchmark κλάδου.</div>
+          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;padding-top:10px;border-top:1px solid var(--rule);">Homepage 18× ελαφρύτερη. 2 valid JSON-LD + 6 OG tags. Benchmark κλάδου.</div>
         </div>
       </div>
       <!-- Kia -->
@@ -504,7 +508,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0/60</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Alt Missing</div></div>
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--amber);letter-spacing:-1px;">4</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
-          <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Ελαφρύτερη homepage. Μόνος με 100% alt-text coverage — 60/60 labeled.</div>
+          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;padding-top:10px;border-top:1px solid var(--rule);">Ελαφρύτερη homepage. Μόνος με 100% alt-text coverage — 60/60 labeled.</div>
         </div>
       </div>
       <!-- Nissan -->
@@ -520,7 +524,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">18</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Lazy Images</div></div>
             <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
-          <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Ταχύτερο TTFB (0.10s). Lazy-loads 18 images. lang="el-GR" + valid schema.</div>
+          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;padding-top:10px;border-top:1px solid var(--rule);">Ταχύτερο TTFB (0.10s). Lazy-loads 18 images. lang="el-GR" + valid schema.</div>
         </div>
       </div>
     </div>
