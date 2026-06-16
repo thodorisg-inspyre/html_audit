@@ -110,9 +110,9 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 
 /* ── CODE ── */
 .code-blk{font-family:'Courier New',monospace;font-size:11px;line-height:1.9;padding:18px 22px;border-radius:0;background:var(--ink);}
-.code-blk-bad{border:1px solid #2A1212;border-top:2px solid var(--red);}
-.code-blk-ok{border:1px solid #0F2018;border-top:2px solid var(--green);}
-.c-bad{color:#C87070;}.c-ok{color:#B8B8A8;}.c-cm{color:#484848;}
+.code-blk-bad{border:none;}
+.code-blk-ok{border:none;}
+.c-bad{color:var(--red);}.c-ok{color:var(--green);}.c-cm{color:#888;}
 
 /* ── SCREENSHOTS ── */
 .ss-frame{position:relative;overflow:hidden;border:1px solid var(--rule);border-radius:10px;}
@@ -377,25 +377,31 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <!-- right: code + donut -->
     <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;flex-shrink:0;">
-        <div>
-          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--red);line-height:1;">✗</span><span style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Τώρα — Invalid JSON</span></div>
+        <div style="overflow:hidden;border:1px solid #331010;">
+          <div style="background:var(--red);padding:10px 20px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:13px;font-weight:800;color:#fff;line-height:1;">✗</span>
+            <span style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:rgba(255,255,255,0.8);">Τώρα — Invalid JSON</span>
+          </div>
           <div class="code-blk code-blk-bad">
-<span class="c-bad">&lt;script type="application/ld+json"&gt;</span>
-<span class="c-bad">{</span>
-<span class="c-bad">  &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;,</span>
-<span class="c-bad">  &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;</span>
-<span class="c-bad">}</span>
-<span class="c-cm">→ JSON.parse() → SyntaxError (ignored)</span></div>
+<span class="c-cm">&lt;script type="application/ld+json"&gt;</span>
+<span class="c-cm">{</span>
+<span class="c-cm">  &amp;quot;@context&amp;quot;: &amp;quot;http://schema.org&amp;quot;,</span>
+<span class="c-cm">  &amp;quot;@type&amp;quot;: &amp;quot;Organization&amp;quot;</span>
+<span class="c-cm">}</span>
+<span class="c-bad">→ JSON.parse() → SyntaxError (ignored)</span></div>
         </div>
-        <div>
-          <div style="display:flex;align-items:center;gap:7px;margin-bottom:10px;"><span style="font-size:11px;font-weight:800;color:var(--green);line-height:1;">✓</span><span style="font-size:8px;font-weight:400;text-transform:uppercase;letter-spacing:4px;color:var(--ash);">Fix — Valid JSON-LD</span></div>
+        <div style="overflow:hidden;border:1px solid #0F2A18;">
+          <div style="background:var(--green);padding:10px 20px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:13px;font-weight:800;color:#fff;line-height:1;">✓</span>
+            <span style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:rgba(255,255,255,0.8);">Fix — Valid JSON-LD</span>
+          </div>
           <div class="code-blk code-blk-ok">
 <span class="c-cm">// Nuxt head() config:</span>
 <span class="c-ok">__dangerouslyDisableSanitizers: ['script']</span>
 
 <span class="c-ok">"@context": "http://schema.org",</span>
 <span class="c-ok">"@type": "Organization"</span>
-<span class="c-cm">→ valid JSON-LD ✓ rich results eligible</span></div>
+<span class="c-ok">→ valid JSON-LD ✓ rich results eligible</span></div>
         </div>
       </div>
       <div style="flex:1;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
