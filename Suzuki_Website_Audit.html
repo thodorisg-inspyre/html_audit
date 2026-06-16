@@ -6,7 +6,7 @@
 <title>INSPYRE — Website Audit · Suzuki.gr</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
 :root{
@@ -30,14 +30,14 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 /* ── HEADER / FOOTER ── */
 .ph{padding:18px 52px 0;flex-shrink:0;}
 .ph-row{display:flex;justify-content:space-between;align-items:center;padding-bottom:12px;}
-.ph-lbl{font-size:8px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--ash);}
-.ph-num{font-size:8px;font-weight:600;letter-spacing:2px;color:var(--ash);}
+.ph-lbl{font-size:8px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:var(--ash);}
+.ph-num{font-size:8px;font-weight:800;letter-spacing:2px;color:var(--ash);}
 .ph-lbl-dk{color:#3A3A3A;}
 .ph-num-dk{color:#3A3A3A;}
 .pc{flex:1;padding:24px 52px 0;min-height:0;display:flex;flex-direction:column;}
 .pf{padding:0 52px 18px;flex-shrink:0;margin-top:auto;}
 .pf-row{display:flex;justify-content:space-between;align-items:center;padding-top:12px;}
-.pf-lbl{font-size:8px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#C0C0C0;}
+.pf-lbl{font-size:8px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:#C0C0C0;}
 .pf-num{font-size:9px;font-weight:800;color:#D8D8D8;}
 .pf-lbl-dk{color:#2A2A2A;}
 .pf-num-dk{color:#2A2A2A;}
@@ -47,23 +47,23 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .rule-dk{height:1px;background:var(--rule-dk);flex-shrink:0;}
 
 /* ── TYPE SCALE ── */
-.sec-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:var(--ash);}
-.sec-lbl-dk{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:#888;}
-.t-display{font-size:104px;font-weight:800;line-height:.88;letter-spacing:-5px;text-transform:uppercase;}
-.t-h1{font-size:72px;font-weight:800;line-height:.92;letter-spacing:-3px;text-transform:uppercase;}
-.t-h2{font-size:48px;font-weight:800;line-height:.96;letter-spacing:-2px;text-transform:uppercase;}
-.t-h3{font-size:32px;font-weight:800;line-height:1.0;letter-spacing:-1px;}
-.t-body{font-size:15px;font-weight:400;line-height:1.85;color:var(--ash);}
-.t-body-dk{font-size:15px;font-weight:400;line-height:1.85;color:#4A4A4A;}
-.t-small{font-size:12px;font-weight:400;line-height:1.7;color:var(--ash);}
+.sec-lbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:var(--ash);}
+.sec-lbl-dk{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:#888;}
+.t-display{font-family:'Montserrat',sans-serif;font-size:104px;font-weight:800;line-height:.88;letter-spacing:-5px;text-transform:uppercase;}
+.t-h1{font-family:'Montserrat',sans-serif;font-size:72px;font-weight:800;line-height:.92;letter-spacing:-3px;text-transform:uppercase;}
+.t-h2{font-family:'Montserrat',sans-serif;font-size:48px;font-weight:800;line-height:.96;letter-spacing:-2px;text-transform:uppercase;}
+.t-h3{font-family:'Montserrat',sans-serif;font-size:32px;font-weight:800;line-height:1.0;letter-spacing:-1px;}
+.t-body{font-size:15px;font-weight:500;line-height:1.85;color:var(--ash);}
+.t-body-dk{font-size:15px;font-weight:500;line-height:1.85;color:#4A4A4A;}
+.t-small{font-size:12px;font-weight:500;line-height:1.7;color:var(--ash);}
 .t-source{font-size:9px;color:#C8C8C8;letter-spacing:.5px;margin-top:auto;padding-top:8px;}
 .t-source-lt{font-size:9px;color:#B8B8B8;letter-spacing:.5px;margin-top:auto;padding-top:8px;}
 
 /* ── GRADE CARDS ── */
 .grade-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;}
 .grade-card{background:var(--off);padding:32px 24px;border:1px solid var(--rule);display:flex;flex-direction:column;justify-content:space-between;border-radius:14px;box-shadow:0 1px 4px rgba(0,0,0,.07);}
-.grade-lbl{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-bottom:10px;}
-.grade-val{font-size:96px;font-weight:800;line-height:.85;letter-spacing:-3px;}
+.grade-lbl{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-bottom:10px;}
+.grade-val{font-family:'Montserrat',sans-serif;font-size:96px;font-weight:800;line-height:.85;letter-spacing:-3px;}
 .g-f,.g-d{color:var(--red);}.g-c,.g-cp,.g-bm{color:var(--amber);}.g-b{color:var(--green);}
 .grade-desc{font-size:11px;color:var(--ash);line-height:1.5;}
 
@@ -72,19 +72,19 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .metric-card{padding:24px 20px;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.06);}
 .metric-card-lt{background:var(--off);border:1px solid var(--rule);}
 .metric-card-dk{background:#1E1E1E;border:1px solid var(--rule-dk);}
-.metric-val{font-size:56px;font-weight:800;line-height:1;letter-spacing:-3px;}
+.metric-val{font-family:'Montserrat',sans-serif;font-size:56px;font-weight:800;line-height:1;letter-spacing:-3px;}
 .metric-val-lt{color:var(--ink);}
 .metric-val-dk{color:var(--paper);}
 .metric-unit{font-size:20px;font-weight:300;color:var(--ash);}
-.metric-lbl{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-top:10px;}
-.metric-status{font-size:8px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
+.metric-lbl{font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-top:10px;}
+.metric-status{font-size:8px;font-weight:800;letter-spacing:2px;text-transform:uppercase;margin-top:4px;}
 .s-poor{color:var(--red);}.s-warn{color:var(--amber);}.s-ok{color:var(--green);}
 
 /* ── CHECK TABLE ── */
 .check-row{display:grid;grid-template-columns:110px 54px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--rule);align-items:start;}
 .check-row:first-child{border-top:1px solid var(--rule);}
-.check-name{font-size:13px;font-weight:700;color:var(--ink);}
-.cbadge{font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:4px 11px;display:inline-block;border-radius:100px;}
+.check-name{font-size:13px;font-weight:800;color:var(--ink);}
+.cbadge{font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:4px 11px;display:inline-block;border-radius:100px;}
 .cbadge-fail{background:#FDECEA;color:var(--red);}
 .cbadge-warn{background:#FEF3E2;color:var(--amber);}
 .cbadge-pass{background:#E8F5EE;color:var(--green);}
@@ -107,17 +107,17 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .callout{padding:18px 22px;border:1px solid var(--rule);border-left:3px solid var(--ink);border-radius:0 10px 10px 0;}
 .callout-red{border-left-color:var(--red);background:#FDFAFA;}
 .callout-green{border-left-color:var(--green);background:#FAFDF9;}
-.callout-lbl{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;margin-bottom:5px;}
+.callout-lbl{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;margin-bottom:5px;}
 
 /* ── ACTION ── */
 .action-row{display:grid;grid-template-columns:28px 80px 1fr;gap:12px;padding:13px 0;border-bottom:1px solid var(--rule);align-items:start;}
 .action-row:first-child{border-top:1px solid var(--rule);}
 .action-num{font-size:12px;font-weight:800;color:var(--ink);}
-.atag{font-size:8px;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;display:inline-block;border-radius:100px;}
+.atag{font-size:8px;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:5px 12px;display:inline-block;border-radius:100px;}
 .atag-c{background:#FDECEA;color:var(--red);}
 .atag-q{background:#FEF3E2;color:var(--amber);}
 .atag-o{background:#E8F5EE;color:var(--green);}
-.action-title{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:3px;}
+.action-title{font-size:12px;font-weight:800;color:var(--ink);margin-bottom:3px;}
 .action-desc{font-size:11px;color:var(--ash);line-height:1.6;}
 
 /* ── OG ── */
@@ -126,11 +126,11 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 .og-noimg span{font-size:9px;color:var(--ash);text-transform:uppercase;letter-spacing:2px;}
 .og-body{padding:12px 14px;background:#FFFFFF;}
 .og-domain{font-size:8px;color:var(--ash);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px;}
-.og-title{font-size:13px;font-weight:700;color:var(--ink);}
+.og-title{font-size:13px;font-weight:800;color:var(--ink);}
 .og-desc{font-size:11px;color:var(--ash);margin-top:3px;}
 
 /* ── BIG NUMBER ── */
-.big-num{font-size:96px;font-weight:800;letter-spacing:-5px;line-height:1;}
+.big-num{font-family:'Montserrat',sans-serif;font-size:96px;font-weight:800;letter-spacing:-5px;line-height:1;}
 
 /* ── CHART ── */
 .chart-wrap{position:relative;flex:1;min-height:0;}
@@ -142,8 +142,8 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 
 /* ── STAT BOX ── */
 .stat-box{padding:24px 20px;border-radius:12px;}
-.stat-box-val{font-size:52px;font-weight:800;letter-spacing:-3px;line-height:1;}
-.stat-box-lbl{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-top:8px;}
+.stat-box-val{font-family:'Montserrat',sans-serif;font-size:52px;font-weight:800;letter-spacing:-3px;line-height:1;}
+.stat-box-lbl{font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--ash);margin-top:8px;}
 
 /* ── PRINT ── */
 @media print{
@@ -185,7 +185,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <div>
         <div style="font-size:13px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:#999;margin-bottom:16px;">Website Audit /</div>
         <div class="rule-dk" style="max-width:680px;"></div>
-        <div style="font-size:110px;font-weight:800;color:#FFF;letter-spacing:-6px;line-height:.88;text-transform:uppercase;margin-top:18px;">Suzuki.gr</div>
+        <div style="font-size:110px;font-weight:800;color:#FFF;letter-spacing:-6px;line-height:.88;text-transform:uppercase;margin-top:18px;font-family:'Montserrat',sans-serif;">Suzuki.gr</div>
         <div style="font-size:18px;font-weight:400;color:#B0ABA3;margin-top:14px;letter-spacing:2px;">auto.suzuki.gr — Τεχνική Αξιολόγηση Ιστοσελίδας</div>
       </div>
       <!-- bottom meta -->
@@ -276,11 +276,11 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <div style="display:flex;flex-direction:column;gap:12px;justify-content:center;">
         <div style="border:1px solid var(--rule);padding:22px 18px;text-align:center;border-radius:12px;">
           <div style="font-size:48px;font-weight:800;color:var(--ink);letter-spacing:-3px;line-height:1;">−0.1<span style="font-size:20px;font-weight:300;color:var(--ash);">s</span></div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#888;margin-top:8px;">Βελτίωση</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:#888;margin-top:8px;">Βελτίωση</div>
         </div>
         <div style="border:1px solid var(--rule);padding:22px 18px;text-align:center;border-radius:12px;">
           <div style="font-size:48px;font-weight:800;color:var(--green);letter-spacing:-3px;line-height:1;">+8<span style="font-size:20px;font-weight:300;color:var(--ash);">%</span></div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#888;margin-top:8px;">Conversions</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:#888;margin-top:8px;">Conversions</div>
         </div>
         <div style="font-size:10px;color:#666;line-height:1.6;">Κάθε 0.1s ταχύτερη φόρτωση → +8% conversions. Google/Deloitte.</div>
       </div>
@@ -337,21 +337,21 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <div style="width:400px;flex-shrink:0;display:flex;flex-direction:column;justify-content:space-between;">
       <div>
         <div class="sec-lbl" style="margin-bottom:20px;">05 / Structured Data</div>
-        <div style="font-size:80px;font-weight:800;color:var(--ink);letter-spacing:-4px;line-height:.88;text-transform:uppercase;">Google<br>βλέπει<br><span style="color:var(--red);">μηδέν.</span></div>
+        <div style="font-size:80px;font-weight:800;color:var(--ink);letter-spacing:-4px;line-height:.88;text-transform:uppercase;font-family:'Montserrat',sans-serif;">Google<br>βλέπει<br><span style="color:var(--red);">μηδέν.</span></div>
         <div style="margin-top:20px;font-size:15px;color:var(--ash);line-height:1.75;max-width:340px;">Και τα 2 JSON-LD blocks έχουν HTML-entity-encoded quotes — αποτυγχάνουν στο JSON parsing. 0 έγκυρα schema για τη Google.</div>
       </div>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px;">
         <div style="background:var(--off);border:1px solid var(--rule);padding:18px 16px;text-align:center;border-radius:10px;">
           <div style="font-size:40px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1;">0/2</div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Έγκυρα JSON-LD</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Έγκυρα JSON-LD</div>
         </div>
         <div style="background:var(--off);border:1px solid var(--rule);padding:18px 16px;text-align:center;border-radius:10px;">
           <div style="font-size:40px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1;">404</div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Schema Logo URL</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Schema Logo URL</div>
         </div>
         <div style="background:var(--off);border:1px solid var(--rule);padding:18px 16px;text-align:center;border-radius:10px;">
           <div style="font-size:40px;font-weight:800;color:var(--red);letter-spacing:-2px;line-height:1;">0</div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Vehicle Schema</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:#444;margin-top:6px;">Vehicle Schema</div>
         </div>
       </div>
     </div>
@@ -359,7 +359,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <div style="flex:1;display:flex;flex-direction:column;gap:16px;">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;flex-shrink:0;">
         <div>
-          <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--red);margin-bottom:8px;">✗ Τώρα — Invalid JSON</div>
+          <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--red);margin-bottom:8px;">✗ Τώρα — Invalid JSON</div>
           <div class="code-blk code-blk-bad">
 <span class="c-bad">&lt;script type="application/ld+json"&gt;</span>
 <span class="c-bad">{</span>
@@ -369,7 +369,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 <span class="c-cm">→ JSON.parse() → SyntaxError (ignored)</span></div>
         </div>
         <div>
-          <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--green);margin-bottom:8px;">✓ Fix — Valid JSON-LD</div>
+          <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--green);margin-bottom:8px;">✓ Fix — Valid JSON-LD</div>
           <div class="code-blk code-blk-ok">
 <span class="c-cm">// Nuxt head() config:</span>
 <span class="c-ok">__dangerouslyDisableSanitizers: ['script']</span>
@@ -400,10 +400,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <div class="sec-lbl" style="margin-bottom:16px;">06 / On-Page SEO</div>
       <table style="width:100%;border-collapse:collapse;flex-shrink:0;">
         <thead><tr>
-          <th style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Σελίδα</th>
-          <th style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Page Title</th>
-          <th style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">H1</th>
-          <th style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:right;border-bottom:1px solid var(--rule);">Alt Missing</th>
+          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Σελίδα</th>
+          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">Page Title</th>
+          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:left;border-bottom:1px solid var(--rule);">H1</th>
+          <th style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--ash);padding:0 0 10px;text-align:right;border-bottom:1px solid var(--rule);">Alt Missing</th>
         </tr></thead>
         <tbody>
           <tr><td style="font-size:12px;font-weight:700;color:var(--ink);padding:11px 0;border-bottom:1px solid var(--rule);">Homepage /</td><td style="font-size:12px;color:var(--green);font-weight:700;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);">OK</td><td style="font-size:12px;color:var(--red);font-weight:700;padding:11px 12px 11px 0;border-bottom:1px solid var(--rule);">6 H1s (carousel)</td><td style="font-size:12px;color:var(--red);font-weight:700;padding:11px 0;border-bottom:1px solid var(--rule);text-align:right;">53%</td></tr>
@@ -438,7 +438,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     <div style="flex:1;display:flex;flex-direction:column;justify-content:space-between;">
       <div>
         <div class="sec-lbl" style="margin-bottom:20px;">07 / Social Sharing</div>
-        <div style="font-size:88px;font-weight:800;color:var(--ink);letter-spacing:-5px;line-height:.88;text-transform:uppercase;">Μηδέν<br>OG tags.<br><span style="color:var(--red);">Site-wide.</span></div>
+        <div style="font-size:88px;font-weight:800;color:var(--ink);letter-spacing:-5px;line-height:.88;text-transform:uppercase;font-family:'Montserrat',sans-serif;">Μηδέν<br>OG tags.<br><span style="color:var(--red);">Site-wide.</span></div>
         <div style="margin-top:20px;font-size:15px;color:var(--ash);line-height:1.75;max-width:400px;">Κάθε share σε Facebook, Instagram, X, WhatsApp, Viber εμφανίζεται χωρίς έλεγχο εικόνας, τίτλου ή description.</div>
       </div>
       <div>
@@ -464,7 +464,7 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
         <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--off);border:1px solid var(--rule);border-radius:8px;"><span style="font-size:11px;color:var(--ink);font-weight:600;">og:image</span><span style="font-size:11px;color:var(--red);font-weight:700;">✗ Missing</span></div>
         <div style="display:flex;justify-content:space-between;padding:9px 12px;background:var(--off);border:1px solid var(--rule);border-radius:8px;"><span style="font-size:11px;color:var(--ink);font-weight:600;">twitter:card</span><span style="font-size:11px;color:var(--red);font-weight:700;">✗ Missing</span></div>
         <div style="padding:12px;border:1px solid var(--rule);background:#F0FDF4;border-radius:8px;margin-top:4px;">
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:4px;">Fix</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:4px;">Fix</div>
           <div style="font-size:11px;color:var(--ash);line-height:1.6;">Λίγες γραμμές στο Nuxt head() config ελέγχουν κάθε social share του brand — Facebook, Instagram, X, WhatsApp.</div>
         </div>
       </div>
@@ -489,10 +489,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
         </div>
         <div style="padding:14px;flex-shrink:0;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">41<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.14<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">2/2</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">JSON-LD</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">41<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.14<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">2/2</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">JSON-LD</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
           <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Homepage 18× ελαφρύτερη. 2 valid JSON-LD + 6 OG tags. Benchmark κλάδου.</div>
         </div>
@@ -505,10 +505,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
         </div>
         <div style="padding:14px;flex-shrink:0;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">23<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.16<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0/60</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Alt Missing</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--amber);letter-spacing:-1px;">4</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">23<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.16<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0/60</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Alt Missing</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--amber);letter-spacing:-1px;">4</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
           <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Ελαφρύτερη homepage. Μόνος με 100% alt-text coverage — 60/60 labeled.</div>
         </div>
@@ -521,10 +521,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
         </div>
         <div style="padding:14px;flex-shrink:0;">
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--amber);letter-spacing:-1px;">141<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.10<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB — ταχύτ.</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">18</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Lazy Images</div></div>
-            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--amber);letter-spacing:-1px;">141<span style="font-size:11px;font-weight:300;color:var(--ash);"> KB</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Wire Weight</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">0.10<span style="font-size:11px;font-weight:300;color:var(--ash);">s</span></div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">TTFB — ταχύτ.</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">18</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">Lazy Images</div></div>
+            <div style="background:var(--off);padding:10px 12px;border-radius:6px;"><div style="font-size:22px;font-weight:800;color:var(--green);letter-spacing:-1px;">6</div><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:1.5px;color:var(--ash);margin-top:4px;">OG Tags</div></div>
           </div>
           <div style="font-size:11px;color:var(--ash);line-height:1.6;padding-top:10px;border-top:1px solid var(--rule);">Ταχύτερο TTFB (0.10s). Lazy-loads 18 images. lang="el-GR" + valid schema.</div>
         </div>
@@ -555,10 +555,10 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <div style="display:flex;flex-direction:column;background:var(--off);border-radius:10px;padding:16px 14px;"><div class="sec-lbl" style="margin-bottom:10px;">Open Graph Tags</div><div class="chart-wrap" style="flex:1;"><canvas id="bOG"></canvas></div></div>
     </div>
     <div style="margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:10px;overflow:hidden;flex-shrink:0;">
-      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--red);margin-bottom:8px;">Suzuki</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">757 KB · 3.96 MB · 1.15s<br>0/2 JSON-LD · 0 OG<br>lang: ✗ · Sitemap: 504</div></div>
-      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Toyota</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">41 KB · 285 KB · 0.14s<br>2/2 JSON-LD · 6 OG<br>lang: el · Sitemap: 200</div></div>
-      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Kia</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">23 KB · 176 KB · 0.16s<br>1/1 JSON-LD · 4 OG<br>lang: el · Sitemap: 200</div></div>
-      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Nissan</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">141 KB · 1.11 MB · 0.10s<br>1/1 JSON-LD · 6 OG<br>lang: el-GR · Sitemap: 200</div></div>
+      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--red);margin-bottom:8px;">Suzuki</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">757 KB · 3.96 MB · 1.15s<br>0/2 JSON-LD · 0 OG<br>lang: ✗ · Sitemap: 504</div></div>
+      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Toyota</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">41 KB · 285 KB · 0.14s<br>2/2 JSON-LD · 6 OG<br>lang: el · Sitemap: 200</div></div>
+      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Kia</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">23 KB · 176 KB · 0.16s<br>1/1 JSON-LD · 4 OG<br>lang: el · Sitemap: 200</div></div>
+      <div style="background:var(--off);padding:18px 16px;"><div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:2px;color:var(--green);margin-bottom:8px;">Nissan</div><div style="font-size:11px;color:var(--ash);line-height:1.9;">141 KB · 1.11 MB · 0.10s<br>1/1 JSON-LD · 6 OG<br>lang: el-GR · Sitemap: 200</div></div>
     </div>
     <div class="t-source-lt">Πηγή: Direct measurement all four homepages, 12 Ιουνίου 2026</div>
   </div>
@@ -582,17 +582,17 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
     </div>
     <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start;">
       <div>
-        <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--red);margin-bottom:10px;">Critical — Fix First</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--red);margin-bottom:10px;">Critical — Fix First</div>
         <div class="action-row"><div class="action-num">01</div><div><span class="atag atag-c">Critical</span></div><div><div class="action-title">Επαναφορά XML Sitemap</div><div class="action-desc">HTTP 504 → cached static file. Sitemap recovery στη Search Console.</div></div></div>
         <div class="action-row"><div class="action-num">02</div><div><span class="atag atag-c">Critical</span></div><div><div class="action-title">Fix JSON-LD Escaping</div><div class="action-desc">Nuxt disableSanitizers + fix 404 logo + Vehicle schema σε model pages.</div></div></div>
         <div class="action-row"><div class="action-num">03</div><div><span class="atag atag-c">Critical</span></div><div><div class="action-title">Μείωση HTML Payload</div><div class="action-desc">Στόχος &lt;500 KB raw HTML. Fix SSR state serialization.</div></div></div>
-        <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--amber);margin:18px 0 10px;">Quick Wins — Same Sprint</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--amber);margin:18px 0 10px;">Quick Wins — Same Sprint</div>
         <div class="action-row"><div class="action-num">04</div><div><span class="atag atag-q">Quick</span></div><div><div class="action-title">Open Graph + Twitter Card</div><div class="action-desc">Nuxt head() — ελέγχει κάθε social share.</div></div></div>
         <div class="action-row"><div class="action-num">05</div><div><span class="atag atag-q">Quick</span></div><div><div class="action-title">De-duplicate Title + H1s</div><div class="action-desc">Αφαίρεση διπλού suffix. Ένα H1 ανά σελίδα.</div></div></div>
         <div class="action-row"><div class="action-num">06</div><div><span class="atag atag-q">Quick</span></div><div><div class="action-title">lang + HSTS + www DNS</div><div class="action-desc">htmlAttrs, nginx header, DNS record.</div></div></div>
       </div>
       <div>
-        <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:var(--green);margin-bottom:10px;">Ongoing</div>
+        <div style="font-size:8px;font-weight:800;text-transform:uppercase;letter-spacing:3px;color:var(--green);margin-bottom:10px;">Ongoing</div>
         <div class="action-row"><div class="action-num">07</div><div><span class="atag atag-o">Ongoing</span></div><div><div class="action-title">Modern Image Pipeline</div><div class="action-desc">WebP/AVIF παντού (0→100%) + lazy-loading.</div></div></div>
         <div class="action-row"><div class="action-num">08</div><div><span class="atag atag-o">Ongoing</span></div><div><div class="action-title">Alt-Text Policy στο CMS</div><div class="action-desc">Υποχρεωτικό πεδίο + backfill model galleries.</div></div></div>
         <div class="action-row"><div class="action-num">09</div><div><span class="atag atag-o">Ongoing</span></div><div><div class="action-title">Search Console Monitoring</div><div class="action-desc">Sitemap recovery, Core Web Vitals, indexation.</div></div></div>
@@ -630,12 +630,12 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
       <!-- left: CTA -->
       <div style="padding:40px 52px;border-right:1px solid #282828;display:flex;flex-direction:column;justify-content:space-between;">
         <div>
-          <div style="font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:4px;color:#666;margin-bottom:20px;">Επόμενο Βήμα</div>
-          <div style="font-size:96px;font-weight:800;color:#FFF;letter-spacing:-5px;line-height:.88;text-transform:uppercase;">Ένα<br>15λεπτο<br>call.</div>
+          <div style="font-size:9px;font-weight:800;text-transform:uppercase;letter-spacing:4px;color:#666;margin-bottom:20px;">Επόμενο Βήμα</div>
+          <div style="font-size:96px;font-weight:800;color:#FFF;letter-spacing:-5px;line-height:.88;text-transform:uppercase;font-family:'Montserrat',sans-serif;">Ένα<br>15λεπτο<br>call.</div>
           <div style="margin-top:20px;font-size:16px;font-weight:300;color:#888;line-height:1.7;max-width:380px;">Παρουσιάζουμε τα ευρήματα, απαντάμε σε ερωτήσεις και βγαίνουμε με ένα σχέδιο δράσης. Χωρίς δέσμευση.</div>
         </div>
         <div style="border-top:1px solid #282828;padding-top:24px;">
-          <div style="font-size:9px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#666;margin-bottom:16px;">Επικοινωνία</div>
+          <div style="font-size:9px;font-weight:800;letter-spacing:4px;text-transform:uppercase;color:#666;margin-bottom:16px;">Επικοινωνία</div>
           <div style="display:flex;flex-direction:column;gap:8px;">
             <div style="font-size:18px;font-weight:700;color:#FFF;">2317 004 004</div>
             <div style="font-size:18px;font-weight:700;color:#FFF;">hello@inspyre.gr</div>
