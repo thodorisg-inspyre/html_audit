@@ -184,9 +184,50 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
 ══════════════════════════════════════════ -->
 <div class="page page-ink" style="position:relative;overflow:hidden;background:#0A0A0A;">
 
-  <!-- pill -->
-  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:290px;height:610px;border-radius:999px;overflow:hidden;z-index:1;">
-    <div style="width:100%;height:100%;background:radial-gradient(ellipse at 50% 30%,#2E2E2E 0%,#1A1A1A 45%,#0D0D0D 100%);"></div>
+  <!-- pill — light, behind text -->
+  <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-52%);width:300px;height:630px;border-radius:999px;overflow:hidden;z-index:1;">
+    <svg viewBox="0 0 300 620" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block;">
+  <defs>
+    <linearGradient id="sky_g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4D4D4"/>
+      <stop offset="52%" stop-color="#BCBCBC"/>
+      <stop offset="82%" stop-color="#909090"/>
+      <stop offset="100%" stop-color="#646464"/>
+    </linearGradient>
+    <linearGradient id="gnd_g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A5A5A"/>
+      <stop offset="100%" stop-color="#383838"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="620" fill="url(#sky_g)"/>
+  <rect x="0" y="510" width="300" height="110" fill="url(#gnd_g)"/>
+  <!-- Main pole -->
+  <polygon points="147,540 153,540 151,85 149,85" fill="#111" opacity="0.9"/>
+  <!-- Top spike -->
+  <rect x="149" y="38" width="2" height="52" fill="#111" opacity="0.9"/>
+  <!-- Cross-arms -->
+  <rect x="78" y="192" width="144" height="5" fill="#181818" opacity="0.85"/>
+  <rect x="90" y="268" width="120" height="5" fill="#181818" opacity="0.85"/>
+  <rect x="105" y="344" width="90" height="5" fill="#181818" opacity="0.85"/>
+  <rect x="115" y="412" width="70" height="4" fill="#181818" opacity="0.85"/>
+  <!-- Platform boxes -->
+  <rect x="118" y="344" width="64" height="28" fill="#1C1C1C" opacity="0.8" rx="1"/>
+  <rect x="124" y="412" width="52" height="22" fill="#1C1C1C" opacity="0.8" rx="1"/>
+  <!-- Dishes -->
+  <ellipse cx="84"  cy="218" rx="19" ry="14" fill="#1A1A1A" opacity="0.75"/>
+  <ellipse cx="216" cy="218" rx="19" ry="14" fill="#1A1A1A" opacity="0.75"/>
+  <ellipse cx="93"  cy="292" rx="16" ry="12" fill="#1A1A1A" opacity="0.75"/>
+  <ellipse cx="207" cy="292" rx="16" ry="12" fill="#1A1A1A" opacity="0.75"/>
+  <ellipse cx="100" cy="362" rx="13" ry="10" fill="#1A1A1A" opacity="0.7"/>
+  <ellipse cx="200" cy="362" rx="13" ry="10" fill="#1A1A1A" opacity="0.7"/>
+  <!-- Trees -->
+  <ellipse cx="38"  cy="495" rx="22" ry="26" fill="#282828" opacity="0.7"/>
+  <rect x="33" y="516" width="10" height="38" fill="#282828" opacity="0.7"/>
+  <ellipse cx="258" cy="500" rx="18" ry="22" fill="#282828" opacity="0.7"/>
+  <rect x="253" y="519" width="9" height="32" fill="#282828" opacity="0.7"/>
+  <ellipse cx="20"  cy="508" rx="14" ry="17" fill="#2E2E2E" opacity="0.65"/>
+  <ellipse cx="278" cy="511" rx="13" ry="16" fill="#2E2E2E" opacity="0.65"/>
+</svg>
   </div>
 
   <!-- logo top-left -->
@@ -198,31 +239,31 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
   </div>
 
   <!-- top-right tagline -->
-  <div style="position:absolute;top:30px;right:68px;z-index:4;font-size:9px;font-weight:400;letter-spacing:4px;text-transform:uppercase;color:#3A3A3A;text-align:right;line-height:2;">DIGITAL EXPERIENCE STUDIO<br>ΘΕΣΣΑΛΟΝΙΚΗ · 2026</div>
+  <div style="position:absolute;top:30px;right:68px;z-index:4;font-size:9px;font-weight:400;letter-spacing:4px;text-transform:uppercase;color:#666;text-align:right;line-height:2.2;">DIGITAL EXPERIENCE STUDIO<br>ΘΕΣΣΑΛΟΝΙΚΗ · 2026</div>
 
-  <!-- rule below header -->
-  <div style="position:absolute;top:72px;left:68px;right:68px;height:1px;background:#1C1C1C;z-index:4;"></div>
+  <!-- rule -->
+  <div style="position:absolute;top:72px;left:68px;right:68px;height:1px;background:#1E1E1E;z-index:4;"></div>
 
-  <!-- hero text — centered, above pill -->
+  <!-- hero — centered, over pill -->
   <div style="position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;">
-    <div style="font-size:9px;font-weight:400;letter-spacing:5px;text-transform:uppercase;color:#444;margin-bottom:18px;text-align:center;">Website Audit /</div>
-    <div style="font-family:'Manrope',sans-serif;font-size:182px;font-weight:800;color:#FFFFFF;letter-spacing:-9px;line-height:.83;text-transform:uppercase;text-align:center;">SUZUKI<br><span style="letter-spacing:-6px;">.GR</span></div>
+    <div style="font-size:9px;font-weight:400;letter-spacing:5px;text-transform:uppercase;color:#777;margin-bottom:20px;text-align:center;">Website Audit /</div>
+    <div style="font-family:'Manrope',sans-serif;font-size:116px;font-weight:800;color:#FFFFFF;letter-spacing:-5px;line-height:1;text-transform:uppercase;text-align:center;white-space:nowrap;text-shadow:0 2px 40px rgba(0,0,0,0.55);">SUZUKI.GR</div>
   </div>
 
   <!-- bottom meta -->
   <div style="position:absolute;bottom:28px;left:68px;right:68px;z-index:4;">
-    <div style="height:1px;background:#1C1C1C;margin-bottom:16px;"></div>
+    <div style="height:1px;background:#1E1E1E;margin-bottom:16px;"></div>
     <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:0;">
       <div>
-        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#3A3A3A;margin-bottom:5px;">Ημερομηνία</div>
+        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#666;margin-bottom:5px;">Ημερομηνία</div>
         <div style="font-size:13px;font-weight:500;color:#F6F4F0;">12 Ιουνίου 2026</div>
       </div>
       <div>
-        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#3A3A3A;margin-bottom:5px;">Ευρήματα</div>
+        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#666;margin-bottom:5px;">Ευρήματα</div>
         <div style="font-size:13px;font-weight:500;color:#F6F4F0;">14 ευρήματα</div>
       </div>
       <div>
-        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#3A3A3A;margin-bottom:5px;">URL</div>
+        <div style="font-size:9px;font-weight:400;letter-spacing:3px;text-transform:uppercase;color:#666;margin-bottom:5px;">URL</div>
         <div style="font-size:13px;font-weight:500;color:#F6F4F0;">auto.suzuki.gr</div>
       </div>
     </div>
