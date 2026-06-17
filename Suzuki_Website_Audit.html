@@ -349,36 +349,72 @@ body{font-family:'Manrope',sans-serif;background:#0A0A0A;}
      04 · CRAWLABILITY (light)
 ══════════════════════════════════════════ -->
 <div class="page page-paper">
-  <div class="ph"><div class="ph-row"><div class="ph-lbl" style="display:flex;align-items:center;gap:10px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="168 96 382 88" style="width:54px;height:auto;display:inline-block;vertical-align:middle;" fill="var(--ink)"><path d="M171.211 103.836H192.227V157H171.211V103.836ZM227.758 103.836H231.273C240.857 103.836 246.573 107.078 248.422 113.562C249.047 115.698 249.359 118.146 249.359 120.906V157H227.758V103.836ZM199.398 103.836H220.414V157H199.398V103.836ZM281.141 103.836H305.242V130.594L281.141 103.836ZM255.633 119.539H255.398C255.398 114.174 256.857 110.216 259.773 107.664C262.69 105.112 267.182 103.836 273.25 103.836L305.242 142.664C305.242 147.82 303.849 151.505 301.062 153.719C298.354 155.88 293.927 156.961 287.781 156.961L255.633 119.539ZM255.516 130.086L278.719 157H255.516V130.086ZM337.492 103.836H340.383C348.117 103.836 353.898 105.698 357.727 109.422C361.242 112.833 363 117.664 363 123.914C363 129.461 361.177 133.927 357.531 137.312C353.651 140.906 348.299 142.703 341.477 142.703H337.492V103.836ZM309.445 103.836H330.461V156.922H309.445V103.836ZM417.047 158.445C417.047 170.763 410.862 176.922 398.492 176.922H396.07V103.836H417.047V158.445ZM367.281 103.836H388.883V157H385.367C375.784 157 370.068 153.745 368.219 147.234C367.594 145.125 367.281 142.69 367.281 139.93V103.836ZM472.539 120.359C472.539 128.224 469.102 133.393 462.227 135.867C466.081 137.299 468.984 139.63 470.938 142.859C472.63 145.724 473.477 149.057 473.477 152.859V157H450.195V103.758H452.227C459.102 103.758 464.167 105.06 467.422 107.664C470.833 110.398 472.539 114.63 472.539 120.359ZM422.695 103.836H443.711V157H422.695V103.836Z"/><path d="M512.877 103.211H516.357C529.646 103.211 537.75 107.711 540.668 116.711C541.617 119.699 542.092 123.162 542.092 127.1V132.9H512.877V103.211ZM474.803 130.738C474.803 126.871 475.312 123.285 476.332 119.98C477.352 116.641 478.934 113.723 481.078 111.227C485.719 105.883 492.363 103.211 501.012 103.211H505.072V157H502.33C493.471 157 486.615 154.574 481.764 149.723C477.123 145.082 474.803 138.754 474.803 130.738ZM512.877 143.236H539.244V144.713C539.244 147.982 538.066 150.742 535.711 152.992C532.828 155.664 528.732 157 523.424 157H512.877V143.236Z"/></svg></div><div class="ph-num">04 / 11</div></div><div class="rule"></div></div>
-  <div class="pc" style="flex-direction:row;gap:40px;padding-top:36px;padding-bottom:36px;">
-    <div style="width:260px;flex-shrink:0;display:flex;flex-direction:column;">
-      <div class="sec-lbl" style="margin-bottom:16px;">04 / Crawlability</div>
-      <div class="chart-wrap" style="height:200px;flex-shrink:0;"><canvas id="chartCrawl"></canvas></div>
-      <div style="margin-top:14px;display:flex;flex-direction:column;gap:7px;">
-        <div style="display:flex;align-items:center;gap:9px;"><div style="width:10px;height:10px;background:var(--red);border-radius:50%;flex-shrink:0;"></div><div style="font-size:11px;color:var(--ash);">3 × FAIL — κρίσιμα</div></div>
-        <div style="display:flex;align-items:center;gap:9px;"><div style="width:10px;height:10px;background:var(--amber);border-radius:50%;flex-shrink:0;"></div><div style="font-size:11px;color:var(--ash);">2 × WARN — προσοχή</div></div>
-        <div style="display:flex;align-items:center;gap:9px;"><div style="width:10px;height:10px;background:var(--green);border-radius:50%;flex-shrink:0;"></div><div style="font-size:11px;color:var(--ash);">4 × PASS — ΟΚ</div></div>
-      </div>
-      <div style="margin-top:20px;flex:1;display:flex;flex-direction:column;justify-content:flex-end;">
-        <div class="callout callout-red">
-          <div class="callout-lbl">Κρίσιμο</div>
-          <div style="font-size:12px;font-weight:500;color:var(--ash);line-height:1.7;">Sitemap HTTP <strong style="color:var(--red);">504</strong> — 60s timeout. Robots.txt εξακολουθεί να παραπέμπει σε αυτό τη Google. Νέα μοντέλα &amp; προσφορές δεν ανακαλύπτονται.</div>
-        </div>
-      </div>
+  <div class="ph"><div class="ph-row"><div class="ph-lbl" style="display:flex;align-items:center;gap:10px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="168 96 382 88" style="width:54px;height:auto;display:inline-block;vertical-align:middle;" fill="var(--ink)"><path d="M171.211 103.836H192.227V157H171.211V103.836ZM227.758 103.836H231.273C240.857 103.836 246.573 107.078 248.422 113.562C249.047 115.698 249.359 118.146 249.359 120.906V157H227.758V103.836ZM199.398 103.836H220.414V157H199.398V103.836ZM281.141 103.836H305.242V130.594L281.141 103.836ZM255.633 119.539H255.398C255.398 114.174 256.857 110.216 259.773 107.664C262.69 105.112 267.182 103.836 273.25 103.836L305.242 142.664C305.242 147.82 303.849 151.505 301.062 153.719C298.354 155.88 293.927 156.961 287.781 156.961L255.633 119.539ZM255.516 130.086L278.719 157H255.516V130.086ZM337.492 103.836H340.383C348.117 103.836 353.898 105.698 357.727 109.422C361.242 112.833 363 117.664 363 123.914C363 129.461 361.177 133.927 357.531 137.312C353.651 140.906 348.299 142.703 341.477 142.703H337.492V103.836ZM309.445 103.836H330.461V156.922H309.445V103.836ZM417.047 158.445C417.047 170.763 410.862 176.922 398.492 176.922H396.07V103.836H417.047V158.445ZM367.281 103.836H388.883V157H385.367C375.784 157 370.068 153.745 368.219 147.234C367.594 145.125 367.281 142.69 367.281 139.93V103.836ZM472.539 120.359C472.539 128.224 469.102 133.393 462.227 135.867C466.081 137.299 468.984 139.63 470.938 142.859C472.63 145.724 473.477 149.057 473.477 152.859V157H450.195V103.758H452.227C459.102 103.758 464.167 105.06 467.422 107.664C470.833 110.398 472.539 114.63 472.539 120.359ZM422.695 103.836H443.711V157H422.695V103.836Z"/><path d="M512.877 103.211H516.357C529.646 103.211 537.75 107.711 540.668 116.711C541.617 119.699 542.092 123.162 542.092 127.1V132.9H512.877V103.211ZM474.803 130.738C474.803 126.871 475.312 123.285 476.332 119.98C477.352 116.641 478.934 113.723 481.078 111.227C485.719 105.883 492.363 103.211 501.012 103.211H505.072V157H502.33C493.471 157 486.615 154.574 481.764 149.723C477.123 145.082 474.803 138.754 474.803 130.738ZM512.877 143.236H539.244V144.713C539.244 147.982 538.066 150.742 535.711 152.992C532.828 155.664 528.732 157 523.424 157H512.877V143.236Z"/></svg></div><div class="ph-num">04 / 11</div></div></div>
+  <div style="flex:1;min-height:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:1fr 1fr 1fr;border-top:1px solid var(--rule);border-left:1px solid var(--rule);">
+
+    <!-- R1C1: editorial headline -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;">
+      <div class="grade-lbl" style="color:var(--ash);">04 / Crawlability</div>
+      <div style="flex:1;display:flex;align-items:center;"><div style="font-size:60px;font-weight:800;letter-spacing:-3px;line-height:.88;color:var(--ink);">Αόρατο<br>για τη<br>Google.</div></div>
     </div>
-    <div style="flex:1;display:flex;flex-direction:column;">
-      <div class="check-row"><div class="check-name">XML Sitemap</div><div><span class="cbadge cbadge-fail">FAIL</span></div><div class="check-detail">HTTP 504, timeout 60s. Και οι 3 ανταγωνιστές επιστρέφουν HTTP 200.</div></div>
-      <div class="check-row"><div class="check-name">Structured Data</div><div><span class="cbadge cbadge-fail">FAIL</span></div><div class="check-detail">JSON-LD HTML-entity-escaped → invalid JSON, αγνοείται από Google. 0/2 valid.</div></div>
-      <div class="check-row"><div class="check-name">html lang</div><div><span class="cbadge cbadge-fail">FAIL</span></div><div class="check-detail">Λείπει από static HTML και rendered DOM. Απαιτείται <code style="font-size:10px;background:#F0F0F0;padding:1px 4px;">lang="el"</code>.</div></div>
-      <div class="check-row"><div class="check-name">www Subdomain</div><div><span class="cbadge cbadge-warn">WARN</span></div><div class="check-detail">Δεν υπάρχει DNS record για www — browser error αντί για 301 redirect.</div></div>
-      <div class="check-row"><div class="check-name">HSTS / Headers</div><div><span class="cbadge cbadge-warn">WARN</span></div><div class="check-detail">Δεν υπάρχουν Strict-Transport-Security, X-Content-Type-Options ή CSP headers.</div></div>
-      <div class="check-row"><div class="check-name">robots.txt</div><div><span class="cbadge cbadge-pass">PASS</span></div><div class="check-detail">Έγκυρο. Μόνο σελίδες διαγωνισμών απαγορεύονται.</div></div>
-      <div class="check-row"><div class="check-name">HTTPS &amp; Redirects</div><div><span class="cbadge cbadge-pass">PASS</span></div><div class="check-detail">http:// → 301 → https://. Certificate έγκυρο.</div></div>
-      <div class="check-row"><div class="check-name">Canonical Tags</div><div><span class="cbadge cbadge-pass">PASS</span></div><div class="check-detail">Self-referencing, συνεπή σε κάθε σελίδα που δειγματίστηκε.</div></div>
-      <div class="check-row"><div class="check-name">404 Handling</div><div><span class="cbadge cbadge-pass">PASS</span></div><div class="check-detail">Πραγματικό HTTP 404 — χωρίς soft-404s.</div></div>
+
+    <!-- R1C2: body copy -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:14px;line-height:1.75;color:var(--ink);">Sitemap HTTP 504 — timeout 60s. Τα 2 JSON-LD blocks είναι entity-encoded και το JSON.parse() αποτυγχάνει. Δεν υπάρχει <span style="font-family:monospace;font-size:12px;background:var(--off);padding:1px 5px;border-radius:3px;">lang</span> attribute. Ο Googlebot δεν βλέπει τίποτα.</div>
     </div>
-  </div></div>
+
+    <!-- R1C3: grade -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;">
+      <div class="grade-lbl" style="color:var(--ash);">Grade</div>
+      <div class="grade-val g-f" style="flex:1;display:flex;align-items:center;font-size:80px;line-height:1;">F</div>
+      <div class="grade-desc" style="color:var(--ash);">3 Fail · 2 Warn · 4 Pass</div>
+    </div>
+
+    <!-- R2C1: XML Sitemap FAIL -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;background:rgba(160,40,40,0.05);">
+      <div class="grade-lbl" style="color:var(--ash);">XML Sitemap</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:72px;letter-spacing:-3px;line-height:1;color:var(--red);">504</div>
+      <div class="grade-desc" style="color:var(--ash);">HTTP timeout 60s — αόρατος στα crawlers</div>
+    </div>
+
+    <!-- R2C2: Structured Data FAIL -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;background:rgba(160,40,40,0.05);">
+      <div class="grade-lbl" style="color:var(--ash);">Structured Data</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:72px;letter-spacing:-3px;line-height:1;color:var(--red);">0/2</div>
+      <div class="grade-desc" style="color:var(--ash);">JSON entity-encoded → JSON.parse() fail</div>
+    </div>
+
+    <!-- R2C3: html lang FAIL -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;background:rgba(160,40,40,0.05);">
+      <div class="grade-lbl" style="color:var(--ash);">html lang</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:80px;letter-spacing:-3px;line-height:1;color:var(--red);">–</div>
+      <div class="grade-desc" style="color:var(--ash);">Λείπει από static HTML και rendered DOM</div>
+    </div>
+
+    <!-- R3C1: www DNS WARN -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;">
+      <div class="grade-lbl" style="color:var(--ash);">www DNS</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:80px;letter-spacing:-3px;line-height:1;color:var(--amber);">!</div>
+      <div class="grade-desc" style="color:var(--ash);">Δεν υπάρχει A record — browser error</div>
+    </div>
+
+    <!-- R3C2: HTTPS PASS -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;">
+      <div class="grade-lbl" style="color:var(--ash);">HTTPS / Redirects</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:72px;letter-spacing:-3px;line-height:1;color:var(--green);">301</div>
+      <div class="grade-desc" style="color:var(--ash);">http → 301 → https. Certificate valid</div>
+    </div>
+
+    <!-- R3C3: robots.txt PASS -->
+    <div style="border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:32px 40px;display:flex;flex-direction:column;">
+      <div class="grade-lbl" style="color:var(--ash);">robots.txt</div>
+      <div class="grade-val" style="flex:1;display:flex;align-items:center;font-size:80px;letter-spacing:-3px;line-height:1;color:var(--green);">✓</div>
+      <div class="grade-desc" style="color:var(--ash);">Σελίδες διαγωνισμών αποκλείονται. OK.</div>
+    </div>
+
+  </div>
 </div>
+
 
 <!-- ══════════════════════════════════════════
      05 · STRUCTURED DATA (dark)
